@@ -1,0 +1,146 @@
+@charset "UTF-8";
+/*Обнуление */
+* {
+		padding: 0;
+		margin: 0;
+		border: 0;
+}
+
+*, *:before, *:after {
+		box-sizing: border-box;
+}
+
+:focus, :active {
+		outline: none;
+}
+
+a:focus, a:active {
+		outline: none;
+}
+
+nav, footer, header, aside {
+		display: block;
+}
+
+html, body {
+		height: 100%;
+		width: 100%;
+		font-size: 100%;
+		line-height: 1;
+		font-size: 14px;
+		-ms-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+		font-family: inherit;
+}
+
+input::-ms-clear {
+		display: none;
+}
+
+button {
+		cursor: pointer;
+}
+
+button::-moz-focus-inner {
+		padding: 0;
+		border: 0;
+}
+
+a, a:visited {
+		text-decoration: none;
+}
+
+a:hover {
+		text-decoration: none;
+}
+
+ul li {
+		list-style: none;
+}
+
+img {
+		vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+		font-size: inherit;
+		font-weight: inherit;
+}
+
+/*---------------------------*/
+body {
+		font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+		max-width: 1400px;
+		margin: 15px auto;
+}
+
+.header {
+		display: flex;
+		justify-content: space-between;
+}
+.header .previous {
+		background-color: transparent;
+}
+.header .next {
+		background-color: transparent;
+}
+.header .title {
+		padding: 15px;
+		text-align: center;
+		font-size: 35px;
+		font-weight: bold;
+}
+
+.post {
+		margin-bottom: 15px;
+}
+.post__title {
+		text-align: center;
+		font-size: 25px;
+		font-weight: 500;
+		margin-bottom: 10px;
+}
+.post__body {
+		font-size: 20px;
+}
+
+.comments__header {
+		font-size: 23px;
+		font-weight: 500;
+		margin-bottom: 10px;
+}
+.comments__list {
+		display: flex;
+		flex-direction: column;
+		margin-left: 60px;
+}
+.comments__item {
+		margin-bottom: 10px;
+		font-size: 15px;
+		display: flex;
+		flex-direction: column;
+}
+.comments__item * {
+		margin-bottom: 3px;
+}
+.comments__name {
+		font-weight: bold;
+}
+.comments__name span {
+		font-weight: normal;
+}
+.comments__email {
+		font-weight: bold;
+}
+.comments__email span {
+		font-weight: normal;
+}
+.comments__body {
+		font-size: 18px;
+		margin-bottom: 0;
+}
